@@ -1,9 +1,9 @@
 :root {
-    --main-bg-color: #F5F5F5;
-    --header-bg-color: #1c1d25;
+    --color-bg-main: #F5F5F5;
+    --color-bg-header: #1c1d25;
 
-    --main-text-color: #000;
-    --header-text-color: #fff;
+    --color-text-main: #1c1d25;
+    --color-text-header: #fff;
 }
 
 * {
@@ -14,8 +14,9 @@
 
 header {
     height: 60px;
-    background-color: var(--header-bg-color);
+    background-color: var(--color-bg-header);
     justify-content: space-around;
+    color: var(--color-text-header);
 }
 
 nav {
@@ -27,7 +28,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--header-text-color);
+    color: var(--color-text-header);
 }
 
 nav ul {
@@ -43,7 +44,6 @@ nav li {
 }
 
 .logo {
-    color: var(--header-text-color);
     margin-right: 0px;
     padding-top: 10px;
 }
@@ -62,7 +62,7 @@ section {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: var(--main-bg-color);
+    background-color: var(--color-bg-main);
     border: 1px solid #000;
 }
 

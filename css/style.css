@@ -35,6 +35,7 @@ header {
 
 nav {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -59,7 +60,7 @@ nav li {
 
 .logo {
     width: 50px;
-    height: 50px;
+    /* align-items: center; */
 }
 
 .dark-light-btn {
@@ -78,8 +79,6 @@ section {
     border: 1px solid #000;
 }
 
-/* Hero Section */
-
 .hero-header {
     font-weight: 600;
     font-size: 90px;
@@ -91,6 +90,53 @@ section {
     align-items: center;
     font-size: 40px;
     font-weight: 200;
+}
+
+/* About Section */
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.information {
+    padding: 50px;
+}
+
+.info-header-container {
+    /* padding-top:  30px; */
+    padding-bottom: 50px;
+}
+
+.about-header {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+    /* margin: 30px; */
+}
+
+.headshot {
+    /* margin: 50px; */
+    width: 600px;
+    /* border-radius: 150px; */
+    /* align-items: center; */
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0;
 }
 
 /* Project Section */

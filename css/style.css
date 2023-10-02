@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: #F5F5F5;
     --header-bg-color: #1c1d25;
+
     --main-text-color: #000;
     --header-text-color: #fff;
 }
@@ -83,5 +84,9 @@ section {
 /* Project Section */
 
 .section-contact {
-
+    display: flex;
+    flex-direction: column; 
+    /* justify-content: flex-end;  */
+    align-items: center;
+    padding: 80px;
 }

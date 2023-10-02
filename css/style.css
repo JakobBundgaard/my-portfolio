@@ -6,10 +6,24 @@
     --color-text-header: #fff;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-main: #1c1d25;
+        --color-bg-header: #F5F5F5;
+        --color-text-main: #F5F5F5;
+        --color-text-header: #1c1d25;
+    }
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
 }
 
 header {
@@ -53,7 +67,7 @@ nav li {
     border: none;
     font-size: 20px;
     cursor: pointer;
-    color: var(--header-text-color);
+    color: var(--color-text-header);
 }
 
 section {
@@ -62,7 +76,6 @@ section {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-bg-main);
     border: 1px solid #000;
 }
 

@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Jakob Bundgaard</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <nav>
+            <h3 class="logo">LOGO</h3>
             <ul>
-                <h3>LOGO</h3>
                 <li><a href="#about">Hvem er jeg</a></li>
                 <li><a href="#projects">Projekter</a></li>
                 <li><a href="#contact">Kontakt</a></li>
-                <button>light/dark mode</button>
             </ul>
+            <button class="dark-light-btn">light/dark mode</button>
         </nav>
     </header>
     <main>
-        <section class="section-section" id="home">
-            <h2>Jakob Bundgaard</h2>
-            <hr>
-            <h3>Full Stack Developer</h3>
+        <section class="section-hero" id="home">
+            <article>
+                <h2 class="hero-header">Jakob Bundgaard</h2>
+                <hr>
+                <h3 class="hero-subtext">Full Stack Developer</h3>
+            </article>
         </section>
 
         <section class="section-about" id="about">
@@ -38,7 +44,10 @@
         </section>
 
         <section class="section-contact" id="contact">
-            <h2>Kontakt</h2>
+            <article>
+                <h2>Kontakt</h2>
+                <h3>jakobbundgaard@hotmail.com</h3>
+            </article>
         </section>
 
         <footer></footer>

@@ -21,13 +21,17 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-bg-main);
     color: var(--color-text-main);
 }
 
 header {
-    height: 60px;
+    height: 68px;
     background-color: var(--color-bg-header);
     justify-content: space-around;
     color: var(--color-text-header);
@@ -56,11 +60,12 @@ nav ul {
 
 nav li {
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .logo {
     width: 50px;
-    /* align-items: center; */
+    margin-bottom: 10px;
 }
 
 .dark-light-btn {
@@ -75,8 +80,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* scroll-margin-top: 100vh; */
     height: 100vh;
-    border: 1px solid #000;
 }
 
 .hero-header {
@@ -118,21 +123,18 @@ section {
 .about-header {
     font-weight: 400;
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .headshot-container {
     display: flex;
     align-items: center;
-    /* margin: 30px; */
 }
 
 .headshot {
-    /* margin: 50px; */
-    width: 600px;
+    margin-left: 150px;
+    width: 400px;
     box-shadow: 5px 5px 20px;
-    /* border-radius: 150px; */
-    /* align-items: center; */
 }
 
 h2 {

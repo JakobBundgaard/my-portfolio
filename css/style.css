@@ -151,3 +151,7 @@ h2 {
     align-items: center;
     padding: 80px;
 }
+
+.section-contact h2 {
+    margin-bottom: 10px;
+}

@@ -116,6 +116,10 @@ section {
     justify-content: center;
 }
 
+.info-header {
+    font-weight: 400;
+}
+
 .information {
     padding: 50px;
 }
@@ -173,6 +177,7 @@ h2 {
 }
 
 .project-header {
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
@@ -237,7 +242,8 @@ h2 {
     padding: 80px;
 }
 
-.section-contact h2 {
+.contact-header {
+    font-weight: 400;
     margin-bottom: 10px;
 }
 

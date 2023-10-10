@@ -240,3 +240,83 @@ h2 {
 .section-contact h2 {
     margin-bottom: 10px;
 }
+
+/* Project Description Views */
+/* MyVinyls */
+/* Description */
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.description-header {
+    font-weight: 400;
+}
+
+.myVinyls {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+/* Showcase */
+
+.project-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.showcase-project-card {
+    width: 70vw;
+    min-height: 600px;
+    box-shadow: 5px 5px 20px;
+    margin: 80px;
+    transition: transform .3s;
+}
+
+.showcase-card-title {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.showcase-description-container-1 {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 50% 50%;
+    margin: 10px;
+    padding: 25px;
+}
+
+.showcase-description-container-2 {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 30% 30% 30%;
+    margin: 10px;
+    padding: 25px;
+}
+
+.showcase-img {
+    margin-bottom: 10px;
+}
+
+.github-link a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* Lessons Learned */
+
+.lessons-learned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}

@@ -80,6 +80,7 @@ i {
     display: flex;
     justify-content: center;
     color: var(--color-text-header);
+    padding-bottom: 5px;
 }
 
 section {
@@ -90,7 +91,7 @@ section {
 }
 
 .hero-header {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 90px;
     cursor: pointer;
 }
@@ -101,6 +102,17 @@ section {
     align-items: center;
     font-size: 40px;
     font-weight: 200;
+}
+
+.hero-header span {
+    display: inline-block;
+    transition: transform 0.3s; /* Tilføj en overgangseffekt for en glattere rotation */
+}
+
+.hero-header span:hover {
+/*     transform: rotate(360deg); /* Rotér hvert bogstav 45 grader ved mouseover */ 
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 /* About Section */
@@ -141,15 +153,17 @@ section {
 }
 
 .headshot {
-    margin-left: 30px;
+    margin-left: 15px;
     width: 400px;
     box-shadow: 5px 5px 20px;
     transition: var(--transition-delay);
 }
 
 .headshot:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+    transform: scale(1.1);
+    box-shadow: 10px 10px 30px;
     transition: var(--transition-delay);
 }
 
@@ -186,7 +200,7 @@ h2 {
     height: 500px;
     box-shadow: 5px 5px 20px;
     margin: 80px;
-    transition: transform .3s;
+    transition: var(--transition-delay);
 }
 
 .project-card a {
@@ -196,8 +210,8 @@ h2 {
 
 .project-card:hover {
     transform: scale(1.1);
-    transition: transform .3s;
-    box-shadow: 20px 20px 40px;
+    transition: var(--transition-delay);
+    box-shadow: 20px 20px 30px;
 }
 
 .project-img {

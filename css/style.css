@@ -4,6 +4,8 @@
 
     --color-text-main: #1c1d25;
     --color-text-header: #fff;
+
+    --transition-delay: 1s;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,6 +91,7 @@ section {
 .hero-header {
     font-weight: 600;
     font-size: 90px;
+    cursor: pointer;
 }
 
 .hero-subtext {
@@ -136,6 +139,13 @@ section {
     margin-left: 30px;
     width: 400px;
     box-shadow: 5px 5px 20px;
+    transition: var(--transition-delay);
+}
+
+.headshot:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: var(--transition-delay);
 }
 
 h2 {
@@ -171,6 +181,7 @@ h2 {
     height: 500px;
     box-shadow: 5px 5px 20px;
     margin: 80px;
+    transition: transform .3s;
 }
 
 .project-card a {

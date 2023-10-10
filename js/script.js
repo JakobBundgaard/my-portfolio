@@ -1,5 +1,6 @@
 const toggle = document.querySelector("#toggleDark");
 const body = document.querySelector("body");
+const heroHeader = document.querySelector(".hero-header");
 
 toggle.addEventListener("click", function () {
     this.classList.toggle("bi-moon");
@@ -13,3 +14,7 @@ toggle.addEventListener("click", function () {
         body.style.transition = "1s";
     }
 });
+
+heroHeader.addEventListener("click", () => {
+    console.log("Hyr mig! I vil ikke fortryde det og jeg kan starte imorgen.")
+})

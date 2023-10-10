@@ -35,9 +35,11 @@ body {
 
 header {
     height: 68px;
+    width: 100vw;
     background-color: var(--color-bg-header);
     justify-content: space-around;
     color: var(--color-text-header);
+    position: fixed;
 }
 
 nav {
@@ -50,7 +52,6 @@ nav {
 nav a {
     text-decoration: none;
     font-size: 20px;
-    padding-bottom: 10px;
     color: var(--color-text-header);
 }
 
@@ -64,7 +65,7 @@ nav ul {
 
 nav li {
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .logo {
@@ -256,7 +257,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .description-header {
@@ -291,7 +292,7 @@ h2 {
     font-weight: 300;
 }
 
-.showcase-description-container-1 {
+.showcase-description-container {
     display: grid;
     grid-template-columns: 30% 60%;
     grid-template-rows: 50% 50%;
@@ -299,13 +300,13 @@ h2 {
     padding: 25px;
 }
 
-.showcase-description-container-2 {
+/* .showcase-description-container-2 {
     display: grid;
     grid-template-columns: 30% 60%;
     grid-template-rows: 30% 30% 30%;
     margin: 10px;
     padding: 25px;
-}
+} */
 
 .showcase-img {
     margin-bottom: 10px;

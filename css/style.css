@@ -19,6 +19,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -41,12 +42,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-weight: 200;
 }
 
 nav a {
     text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
     color: var(--color-text-header);
 }
 
@@ -65,6 +67,7 @@ nav li {
 
 .logo {
     width: 50px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -80,7 +83,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* scroll-margin-top: 100vh; */
     height: 100vh;
 }
 
@@ -116,7 +118,6 @@ section {
 }
 
 .info-header-container {
-    /* padding-top:  30px; */
     padding-bottom: 50px;
 }
 
@@ -144,12 +145,83 @@ h2 {
 
 /* Project Section */
 
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-header-container {
+    padding-bottom: 50px;
+}
+
+.project-header {
+    margin-bottom: 30px;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px;
+    margin: 80px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    transition: transform .3s;
+    box-shadow: 20px 20px 40px;
+}
+
+.project-img {
+    margin-top: 25px;
+    width: 250px;
+}
+
+.project-container hr {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-title {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.subtext {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.projects {
+    margin-top: 40px;
+}
+
+.description-link {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
 /* Contact Section */
 
 .section-contact {
     display: flex;
-    flex-direction: column; 
-    /* justify-content: flex-end;  */
+    flex-direction: column;
     align-items: center;
     padding: 80px;
 }

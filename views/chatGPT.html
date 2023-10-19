@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfolio site for Jakob Bundgaard">
+    <meta name="author" content="Jakob Bundgaard">
+    <title>ChatBot projektbeskrivelse</title>
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="../images/logo-192x192.png" alt="Logo for Jakob Bundgaard"></a>   
+            <ul>
+                <li><a href="#description">Beskrivelse</a></li>
+                <li><a href="#walkthrough">Showcase</a></li>
+                <li><a href="#learned">Læring</a></li>
+            </ul>
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+        </nav>
+    </header>
+    <main>
+        <section class="project-description" id="description">
+            <article>
+                <div class="description-header-container">
+                    <h2 class="description-header">Projekt Beskrivelse</h2>
+                    <div class="content-container">
+                        <div class="information">
+                            <p><b  class="myVinyls">ChatBot</b> er et projekt fra PBA i Webudvikling, hvor vi skulle bygge en simpel
+                                chatGPTclon.</p>
+                            <p>Backenden er bygget i PHP og frontenden er bygget i HTML, CSS og JavaScript.</p>
+                            <p>Projektet har kørt i 3 iterationer.</p>
+                            <p>1. iteration var en serverside version.</p>
+                            <p>2. iteration var en asynkron clientside version med JS fetch API.</p>
+                            <p>3. iteriation var gruppearbejde, hvor der skulle kobles en mySQL database på.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="project-showcase" id="walkthrough">
+            <article>
+                <div class="showcase-header-container">
+                    <h2 class="description-header">Showcase</h2>
+                    <div class="showcase-container">
+                        <div class="showcase-project-card">
+                            <h3 class="showcase-card-title">Sign-up and Log-in</h3>
+                            <div class="showcase-description-container">
+                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Vis signup image og beskriv funktionalitet</p>
+                                </div>
+                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Vis log-in image og beskriv funktionalitet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="showcase-project-card">
+                            <h3 class="showcase-card-title">Opret, edit og slet album</h3>
+                            <div class="showcase-description-container-1">
+                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Opret, edit og slet album funktionalitet</p>
+                                </div>
+                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Upload album image funktionalitet</p>
+                                </div>
+                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Vis log-in image og beskriv funktionalitet</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <p class="github-link"><a href="https://github.com/JakobBundgaard/htdocs/tree/master/myVinyls" target="_blank">Github</a></p>
+            </article>
+        </section>
+
+        <section class="lessons-learned" id="learned">
+            <article>
+                <div class="learned-header-container">
+                    <h2 class="description-header">Læring</h2>
+                    <div class="content-container">
+                        <div class="information">
+                            <p>Da jeg var alene om projektet, var det en enorm lærerig proces osv osv</p>
+                            <p>Mere bla bla bla om  læringsprocessen</p>
+                            <p>Mere bla bla bla om  læringsprocessen</p>
+                            <p>Mere bla bla bla om  læringsprocessen</p>
+                            <p>Mere bla bla bla om  læringsprocessen</p>
+                            <p>Mere bla bla bla om  læringsprocessen</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
-</html>

@@ -37,9 +37,11 @@
                                 chatGPTclon.</p>
                             <p>Backenden er bygget i PHP og frontenden er bygget i HTML, CSS og JavaScript.</p>
                             <p>Projektet har kørt i 3 iterationer.</p>
-                            <p>1. iteration var en serverside version.</p>
-                            <p>2. iteration var en asynkron clientside version med JS fetch API.</p>
-                            <p>3. iteriation var gruppearbejde, hvor der skulle kobles en mySQL database på.</p>
+                            <p>I 1. iteration skulle der bygges en serverside version.</p>
+                            <p>I 2. iteration skulle serverside versionen konverteres til
+                                 en asynkron clientside version med JS fetch API.</p>
+                            <p>I 3. iteriation skulle der arbejdes kollaborativt i grupper med Github som version control,</p>
+                            <p>og opgaven var at koble en mySQL database på projektet, så chat historikken blev gemt i en tabel.</p>
                         </div>
                     </div>
                 </div>
@@ -52,40 +54,95 @@
                     <h2 class="description-header">Showcase</h2>
                     <div class="showcase-container">
                         <div class="showcase-project-card">
-                            <h3 class="showcase-card-title">Sign-up and Log-in</h3>
+                            <h3 class="showcase-card-title">1. Iteration</h3>
                             <div class="showcase-description-container">
                                 <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
                                 <div class="showcase-subtext">
-                                    <p>Vis signup image og beskriv funktionalitet</p>
+                                    <p>Kommer snart</p>
                                 </div>
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <!-- <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
                                 <div class="showcase-subtext">
                                     <p>Vis log-in image og beskriv funktionalitet</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="showcase-project-card">
+                            <h3 class="showcase-card-title">2. Iteration</h3>
+                            <div class="showcase-description-container">
+                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Kommer snart</p>
+                                </div>
+                                <!-- <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Vis log-in image og beskriv funktionalitet</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="showcase-project-card">
+                            <h3 class="showcase-card-title">3. Iteration</h3>
+                            <div class="showcase-description-container">
+                                <img class="showcase-img" src="../images/GitGraph_start.PNG" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Vores tilgang til projektet var. pga projektets omfang, </p>
+                                    <p>at arbejde sammen istedet for hver for sig. For at få</p>
+                                    <p>en bedre grundforståelse for at sætte en database op,</p>
+                                    <p>normalisering af tabeller, få lavet en connection og </p>
+                                    <p>kunne gemme og hente data fra dem.</p>
+                                </div>
+                                <img class="showcase-img" src="../images/ER_final.PNG" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>ER-diagram</p>
+                                    <p>Her er sidste version af vores ER-diagram.</p>
+                                    <p>Hvor man kan se at vi har 3 tabeller.</p>
+                                    <p>En users tabel med en, en til mange relation til chat_history tabellen.</p>
+                                    <p>Vores chat_history tabel med en, en til mange relation til vores responses tabel.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="showcase-project-card">
-                            <h3 class="showcase-card-title">Opret, edit og slet album</h3>
-                            <div class="showcase-description-container-1">
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                        <div class="showcase-project-card">
+                            <h3 class="showcase-card-title">3. Iteration</h3>
+                            <div class="showcase-description-container">
+                                <img class="showcase-img" src="../images/tables_final.PNG" alt="Project 1 image">
                                 <div class="showcase-subtext">
-                                    <p>Opret, edit og slet album funktionalitet</p>
+                                    <p>Her er vores SQL queries til at lave tabellerne.</p>
+                                    <p>I responses tabellen har vi et autoincrementet responses_id, som er primary key og to</p>
+                                    <p>varchar attributter til spørgsmål og svar.</p>
+                                    <p>I chat_history tabellen har vi en primary key history_id, to varchar attributter</p>
+                                    <p>user_messages og response, til brugerens input og chatbottens svar.</p>
+                                    <p>Så har vi chat_id, som er foreign key, en reference til responses tabellen.</p>
+                                    <p>Users tabellen er til så, der på sigt, kan oprettes flere brugere og de kan tilgå deres chat historik</p>
+                                    
                                 </div>
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <img class="showcase-img" src="../images/db_connection.PNG" alt="Project 1 image">
                                 <div class="showcase-subtext">
-                                    <p>Upload album image funktionalitet</p>
-                                </div>
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
-                                <div class="showcase-subtext">
-                                    <p>Vis log-in image og beskriv funktionalitet</p>
+                                    <p>Her forbinder vi til databasen med mysqli_connect.</p>
+                                    <p>først includer vi sql.php, hvor database informationen ligger.</p>
+                                    <p>De ligge i en seperat fil, som er gitignored, så login info</p>
+                                    <p>ikke bliver commited til Github</p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="showcase-project-card">
+                            <h3 class="showcase-card-title">3. Iteration</h3>
+                            <div class="showcase-description-container">
+                                <img class="showcase-img" src="../images/db_connection.PNG" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>kfkvbdfvb</p>
+                                </div>
+                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Kommer snart</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                <p class="github-link"><a href="https://github.com/JakobBundgaard/htdocs/tree/master/myVinyls" target="_blank">Github</a></p>
+                <p class="github-link"><a href="https://github.com/eaaa-dob-wu-e23a/portfolio-JakobBundgaard" target="_blank">Github</a></p>
             </article>
         </section>
+
 
         <section class="lessons-learned" id="learned">
             <article>

@@ -271,8 +271,6 @@ h2 {
     align-items: center;
     text-align: center;
     height: 100vh;
-    /* padding: 0; */
-    /* margin-bottom: 50px; */
 }
 
 .description-header {
@@ -314,14 +312,6 @@ h2 {
     margin: 10px;
     padding: 25px;
 }
-
-/* .showcase-description-container-2 {
-    display: grid;
-    grid-template-columns: 30% 60%;
-    grid-template-rows: 30% 30% 30%;
-    margin: 10px;
-    padding: 25px;
-} */
 
 .showcase-img {
     margin-bottom: 15px;

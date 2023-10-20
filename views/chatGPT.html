@@ -95,8 +95,8 @@
                                     <p>ER-diagram</p>
                                     <p>Her er sidste version af vores ER-diagram.</p>
                                     <p>Hvor man kan se at vi har 3 tabeller.</p>
-                                    <p>En users tabel med en, en til mange relation til chat_history tabellen.</p>
-                                    <p>Vores chat_history tabel med en, en til mange relation til vores responses tabel.</p>
+                                    <p>Vi har en users tabel med "en til mange" relation til chat_history tabellen.</p>
+                                    <p>Vores chat_history tabel med "en til mange" relation til vores responses tabel.</p>
                                 </div>
                             </div>
                         </div>
@@ -111,8 +111,8 @@
                                     <p>I chat_history tabellen har vi en primary key history_id, to varchar attributter</p>
                                     <p>user_messages og response, til brugerens input og chatbottens svar.</p>
                                     <p>Så har vi chat_id, som er foreign key, en reference til responses tabellen.</p>
-                                    <p>Users tabellen er til så, der på sigt, kan oprettes flere brugere og de kan tilgå deres chat historik</p>
-                                    
+                                    <p>Users tabellen er til så, der på sigt, kan oprettes flere brugere som kan</p>
+                                    <p>se deres egen chat historik</p>
                                 </div>
                                 <img class="showcase-img" src="../images/db_connection.PNG" alt="Project 1 image">
                                 <div class="showcase-subtext">
@@ -126,13 +126,43 @@
                         <div class="showcase-project-card">
                             <h3 class="showcase-card-title">3. Iteration</h3>
                             <div class="showcase-description-container">
-                                <img class="showcase-img" src="../images/db_connection.PNG" alt="Project 1 image">
+                                <img class="showcase-img" src="../images/message1.PNG" alt="Project 1 image">
                                 <div class="showcase-subtext">
-                                    <p>kfkvbdfvb</p>
+                                    <p>Her tilføjes spørgsmålet til chatcontaineren.</p>
                                 </div>
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
+                                <img class="showcase-img" src="../images/find_response_query.PNG" alt="Project 1 image">
                                 <div class="showcase-subtext">
-                                    <p>Kommer snart</p>
+                                    <p>Her vises sql-queryen i backend/backend.php der finder det korrekte svar.</p>
+                                    <p>Der bruges prepared statements for at beskytte mod f.eks. sql-injections</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-project-card">
+                            <h3 class="showcase-card-title">3. Iteration</h3>
+                            <div class="showcase-description-container">
+                                <img class="showcase-img" src="../images/display_chat_hist.PNG" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Her bruges JS fetch api til at sende json data til endpointed "backend/backend.php"</p>
+                                    <p>Det gøres med et POST request</p>
+                                </div>
+                                <img class="showcase-img" src="../images/chat_history_backend.PNG" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Her vises sql-queryen, der indsætter spørgsmål og svar i chat_history tabellen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-project-card">
+                            <h3 class="showcase-card-title">3. Iteration</h3>
+                            <div class="showcase-description-container">
+                                <img class="showcase-img" src="../images/get_chatHistory.PNG" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Her vises sql-queryen der henter chathistorikken.</p>
+                                    <p>Der loopes over indholdet</p>
+                                </div>
+                                <img class="showcase-img" src="../images/fetch_chatHistory_onload.PNG" alt="Project 1 image">
+                                <div class="showcase-subtext">
+                                    <p>Her vises en fetch på endpointed "backend/getAllMessages.php",</p>
+                                    <p>der viser chat-historikken når chatbotten åbnes eller siden refreshes</p>
                                 </div>
                             </div>
                         </div>
@@ -150,12 +180,12 @@
                     <h2 class="description-header">Læring</h2>
                     <div class="content-container">
                         <div class="information">
-                            <p>Da jeg var alene om projektet, var det en enorm lærerig proces osv osv</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
+                            <p>Projektet har givet mig en bedre forståelse af</p>
+                            <p>hvordan JS fetch api bruges til at sende og hente data fra en</p>
+                            <p>sql database ved hjælp af quereies</p>
+                            <p>Derudover har jeg lært meget af at bruge Github kollaborativt.</p>
+                            <p>Specifikt merging og fetching.</p>
+                            <p>Alt i alt har det været en lærerig process.</p>
                         </div>
                     </div>
                 </div>

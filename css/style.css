@@ -327,6 +327,12 @@ h2 {
     margin-bottom: 15px;
     padding: 10px;
     max-width: 350px;
+    transition: var(--transition-delay);
+}
+
+.showcase-img:hover {
+    transform: scale(2);
+    transition: var(--transition-delay);
 }
 
 .github-link a {

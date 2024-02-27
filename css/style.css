@@ -35,6 +35,10 @@ body {
   color: var(--color-text-main);
 }
 
+body.dark-mode p {
+  color: var(--color-text-main);
+}
+
 header {
   height: 68px;
   width: 100vw;
@@ -95,11 +99,11 @@ section {
 
 .hero-article {
   display: flex;
-  flex-direction: column; /* Stakker børnene vertikalt */
-  align-items: center; /* Centrerer indholdet horisontalt */
-  text-align: center; /* Centrerer tekst inden i børnene */
-  justify-content: center; /* Centrerer indholdet vertikalt, hvis artiklen har en bestemt højde */
-  height: 100vh; /* Dette vil gøre artiklen til hele viewportens højde; juster efter behov */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .hero-header {
@@ -128,11 +132,10 @@ section {
 
 .hero-header span {
   display: inline-block;
-  transition: transform 0.3s; /* Tilføj en overgangseffekt for en glattere rotation */
+  transition: transform 0.3s;
 }
 
 .hero-header span:hover {
-  /*     transform: rotate(360deg); /* Rotér hvert bogstav 45 grader ved mouseover */
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -159,6 +162,10 @@ section {
   padding: 50px;
 }
 
+.information p {
+  color: var(--color-text-main);
+}
+
 .info-header-container {
   padding-bottom: 50px;
 }
@@ -177,15 +184,21 @@ section {
 .headshot {
   margin-right: 15px;
   width: 400px;
-  box-shadow: 5px 5px 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: var(--transition-delay);
   filter: grayscale(100%);
   border-radius: 5px;
 }
 
+@media (max-width: 480px) {
+  .headshot {
+    width: 90vw; /* Adjust headshot size for smaller screens */
+  }
+}
+
 .headshot:hover {
-  transform: scale(1.1);
-  box-shadow: 10px 10px 30px;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
   transition: var(--transition-delay);
 }
 
@@ -220,26 +233,25 @@ h2 {
 .project-card {
   width: 400px;
   height: 600px;
-  box-shadow: 5px 5px 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin: 80px;
   transition: var(--transition-delay);
   border-radius: 5px;
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  transition: var(--transition-delay);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+  border-color: #eee;
+  background-color: #eaeaea;
 }
 
 .project-card a {
   text-decoration: none;
   color: var(--color-text-main);
-}
-
-/* .project-card a:hover {
-  text-decoration: none;
-  color: var(--color-text-main);
-} */
-
-.project-card:hover {
-  transform: scale(1.1);
-  transition: var(--transition-delay);
-  box-shadow: 10px 10px 20px;
 }
 
 .project-img {
@@ -293,61 +305,45 @@ h2 {
 /* MyVinyls */
 /* Description */
 
-/* .project-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-}
-
-.description-header {
-  font-weight: 400;
-}
-
-.myVinyls {
-  font-size: 35px;
-  font-weight: 300;
-} */
-
 .project-description {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: auto; /* Adjusted from 100vh to auto for flexibility */
-  padding: 2rem 0; /* Added padding */
-  max-width: 900px; /* Constrain the width for readability */
-  margin: auto; /* Center the container */
+  height: auto;
+  padding: 2rem 0;
+  max-width: 900px;
+  margin: auto;
 }
 
 .description-header-container {
-  background-color: var(--color-bg-main); /* Soft background color */
+  background-color: var(--color-bg-main);
   padding: 20px;
-  border-radius: 8px; /* Adds rounded corners */
+  border-radius: 8px;
 }
 
 .description-header {
   font-weight: 400;
   margin-top: 5rem;
-  margin-bottom: 1rem; /* More space below the header */
+  margin-bottom: 1rem;
 }
 
 .myVinyls {
   font-size: 50px;
   font-weight: 300;
-  color: var(--color-highlight); /* Example primary color */
+  color: var(--color-highlight);
 }
 
 .content-container {
-  text-align: left; /* Align text to the left for readability */
-  padding: 0 15px; /* Padding on sides */
+  text-align: left;
+  padding: 0 15px;
 }
 
 .information p {
-  line-height: 1.6; /* Improved line spacing */
-  margin-bottom: 1rem; /* Space between paragraphs */
-  color: #333; /* Dark grey for better readability */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--color-text-main);
+  /* color: #333; */
 }
 
 /* Showcase */
@@ -374,8 +370,8 @@ h2 {
 
 .showcase-subtext {
   padding: 30px;
-  text-align: justify; /* Justify text for better alignment */
-  line-height: 1.6; /* Improved line height */
+  text-align: justify;
+  line-height: 1.6;
 }
 
 .showcase-description-container {
@@ -431,8 +427,8 @@ h2 {
 }
 
 .github-link {
-  display: flex; /* Anvender Flexbox til containeren */
-  justify-content: center; /* Centrerer indholdet (ikonet) horisontalt */
+  display: flex;
+  justify-content: center;
 }
 
 .github-link a img {

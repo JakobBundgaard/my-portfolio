@@ -5,6 +5,8 @@
   --color-text-main: #1c1d25;
   --color-text-header: #fff;
 
+  --color-highlight: #007bff;
+
   --transition-delay: 1s;
 }
 
@@ -91,6 +93,15 @@ section {
   height: 100vh;
 }
 
+.hero-article {
+  display: flex;
+  flex-direction: column; /* Stakker børnene vertikalt */
+  align-items: center; /* Centrerer indholdet horisontalt */
+  text-align: center; /* Centrerer tekst inden i børnene */
+  justify-content: center; /* Centrerer indholdet vertikalt, hvis artiklen har en bestemt højde */
+  height: 100vh; /* Dette vil gøre artiklen til hele viewportens højde; juster efter behov */
+}
+
 .hero-header {
   font-weight: 500;
   font-size: 90px;
@@ -103,6 +114,16 @@ section {
   align-items: center;
   font-size: 40px;
   font-weight: 200;
+  text-align: center;
+}
+
+.hero-subtext,
+.hero-subtext span {
+  display: inline;
+}
+
+.highlight {
+  color: var(--color-highlight);
 }
 
 .hero-header span {
@@ -154,16 +175,15 @@ section {
 }
 
 .headshot {
-  margin-left: 15px;
+  margin-right: 15px;
   width: 400px;
   box-shadow: 5px 5px 20px;
   transition: var(--transition-delay);
   filter: grayscale(100%);
+  border-radius: 5px;
 }
 
 .headshot:hover {
-  /* -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); */
   transform: scale(1.1);
   box-shadow: 10px 10px 30px;
   transition: var(--transition-delay);
@@ -198,27 +218,33 @@ h2 {
 }
 
 .project-card {
-  width: 300px;
-  height: 500px;
+  width: 400px;
+  height: 600px;
   box-shadow: 5px 5px 20px;
   margin: 80px;
   transition: var(--transition-delay);
+  border-radius: 5px;
 }
 
 .project-card a {
   text-decoration: none;
-  color: #000;
+  color: var(--color-text-main);
 }
+
+/* .project-card a:hover {
+  text-decoration: none;
+  color: var(--color-text-main);
+} */
 
 .project-card:hover {
   transform: scale(1.1);
   transition: var(--transition-delay);
-  box-shadow: 20px 20px 30px;
+  box-shadow: 10px 10px 20px;
 }
 
 .project-img {
   margin-top: 25px;
-  width: 250px;
+  width: 350px;
 }
 
 .project-container hr {
@@ -266,7 +292,7 @@ h2 {
 /* MyVinyls */
 /* Description */
 
-.project-description {
+/* .project-description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,6 +307,46 @@ h2 {
 .myVinyls {
   font-size: 35px;
   font-weight: 300;
+} */
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto; /* Adjusted from 100vh to auto for flexibility */
+  padding: 2rem 0; /* Added padding */
+  max-width: 900px; /* Constrain the width for readability */
+  margin: auto; /* Center the container */
+}
+
+.description-header-container {
+  background-color: var(--color-bg-main); /* Soft background color */
+  padding: 20px;
+  border-radius: 8px; /* Adds rounded corners */
+}
+
+.description-header {
+  font-weight: 400;
+  margin-top: 5rem;
+  margin-bottom: 1rem; /* More space below the header */
+}
+
+.myVinyls {
+  font-size: 35px;
+  font-weight: 300;
+  color: var(--color-highlight); /* Example primary color */
+}
+
+.content-container {
+  text-align: left; /* Align text to the left for readability */
+  padding: 0 15px; /* Padding on sides */
+}
+
+.information p {
+  line-height: 1.6; /* Improved line spacing */
+  margin-bottom: 1rem; /* Space between paragraphs */
+  color: #333; /* Dark grey for better readability */
 }
 
 /* Showcase */
@@ -294,9 +360,8 @@ h2 {
 }
 
 .showcase-project-card {
-  width: 70vw;
-  min-height: 600px;
-  box-shadow: 5px 5px 20px;
+  width: 80vw;
+  min-height: 700px;
   margin: 80px;
   transition: transform 0.3s;
 }
@@ -308,25 +373,30 @@ h2 {
 
 .showcase-subtext {
   padding: 30px;
+  text-align: justify; /* Justify text for better alignment */
+  line-height: 1.6; /* Improved line height */
 }
 
 .showcase-description-container {
   display: grid;
-  grid-template-columns: 30% 60%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
   margin: 10px;
   padding: 25px;
+  gap: 50px;
 }
 
 .showcase-img {
+  margin-top: 2rem;
   margin-bottom: 15px;
   padding: 10px;
-  max-width: 350px;
+  width: 100%;
+  max-width: 100%;
   transition: var(--transition-delay);
 }
 
 .showcase-img:hover {
-  transform: scale(2);
+  transform: scale(2) translateX(28%);
   transition: var(--transition-delay);
 }
 
@@ -334,6 +404,7 @@ h2 {
   text-decoration: none;
   font-size: 20px;
   padding-bottom: 10px;
+  color: var(--color-text-main);
 }
 
 /* Lessons Learned */

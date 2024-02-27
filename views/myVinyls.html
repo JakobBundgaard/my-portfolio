@@ -1,107 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio site for Jakob Bundgaard">
-    <meta name="author" content="Jakob Bundgaard">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio site for Jakob Bundgaard" />
+    <meta name="author" content="Jakob Bundgaard" />
     <title>MyVinyls projektbeskrivelse</title>
-    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+      rel="shortcut icon"
+      href="../images/favicon-16x16.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <script src="../js/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="../index.html"><img class="logo" src="../images/logo-192x192.png" alt="Logo for Jakob Bundgaard"></a>   
-            <ul>
-                <li><a href="#description">Beskrivelse</a></li>
-                <li><a href="#walkthrough">Showcase</a></li>
-                <li><a href="#learned">Læring</a></li>
-            </ul>
-            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
-        </nav>
+      <nav>
+        <a href="../index.html"
+          ><img
+            class="logo"
+            src="../images/logo-192x192.png"
+            alt="Logo for Jakob Bundgaard"
+        /></a>
+        <ul>
+          <li><a href="#description">Beskrivelse</a></li>
+          <li><a href="#walkthrough">Showcase</a></li>
+          <li><a href="#learned">Læring</a></li>
+        </ul>
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+      </nav>
     </header>
     <main>
-        <section class="project-description" id="description">
-            <article>
-                <div class="description-header-container">
-                    <h2 class="description-header">Projekt Beskrivelse</h2>
-                    <div class="content-container">
-                        <div class="information">
-                            <p><b  class="myVinyls">MyVinyls</b> er et eksamens projekt fra en PHP eksamen, hvor jeg besluttede at lave 
-                            en app, hvor jeg kunne holde styr på mine vinyler.</p>
-                            <p>Backenden er bygget i PHP og frontenden er bygget i HTML, CSS og JavaScript.</p>
-                            <p>Man kan oprette brugere persistenly og logge ind.</p>
-                            <p>Oprette, editere og slette albums samt tilføje et album billede.</p>
-                            <p>Jeg var den eneste udvikler på projektet, så jeg stod for både backenden og frontenden.</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
+      <section class="project-description" id="description">
+        <article>
+          <div class="description-header-container">
+            <h2 class="description-header">Projekt Beskrivelse</h2>
+            <div class="content-container">
+              <div class="information">
+                <p>
+                  <b class="myVinyls">MyVinyls</b> er et eksamensprojekt bygget
+                  i forbindelse med en PHP-eksamen, hvor jeg valgte at udvikle
+                  en app, der gør det muligt for brugere at organisere og holde
+                  styr på deres samling af vinylplader. Appen fungerer som et
+                  personligt bibliotek, der ikke blot opbevarer information om
+                  hver vinyl, men også tillader brugeren at interagere med
+                  indholdet.
+                </p>
+                <p>
+                  Frontenden er udviklet med HTML, CSS og JavaScript for at
+                  skabe et brugervenlig interface, mens backenden er bygget i
+                  PHP og understøttet af en MySQL-database for sikker
+                  datahåndtering og lagring.
+                </p>
 
-        <section class="project-showcase" id="walkthrough">
-            <article>
-                <div class="showcase-header-container">
-                    <h2 class="description-header">Showcase</h2>
-                    <div class="showcase-container">
-                        <div class="showcase-project-card">
-                            <h3 class="showcase-card-title">Sign-up and Log-in</h3>
-                            <div class="showcase-description-container">
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
-                                <div class="showcase-subtext">
-                                    <p>Vis signup image og beskriv funktionalitet</p>
-                                </div>
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
-                                <div class="showcase-subtext">
-                                    <p>Vis log-in image og beskriv funktionalitet</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="showcase-project-card">
-                            <h3 class="showcase-card-title">Opret, edit og slet album</h3>
-                            <div class="showcase-description-container-1">
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
-                                <div class="showcase-subtext">
-                                    <p>Opret, edit og slet album funktionalitet</p>
-                                </div>
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
-                                <div class="showcase-subtext">
-                                    <p>Upload album image funktionalitet</p>
-                                </div>
-                                <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
-                                <div class="showcase-subtext">
-                                    <p>Vis log-in image og beskriv funktionalitet</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <p class="github-link"><a href="https://github.com/JakobBundgaard/htdocs/tree/master/myVinyls" target="_blank">Github</a></p>
-            </article>
-        </section>
+                <p>
+                  Brugere af MyVinyls kan oprette en konto, logge ind, og
+                  herefter får de fuld adgang til at oprette, redigere og slette
+                  albuminformationer. De kan også uploade billeder af deres
+                  albums, hvilket gør det muligt at se en visuelt tiltalende
+                  liste over alle tilføjede albums.
+                </p>
+                <p>
+                  Som den eneste udvikler på projektet havde jeg det fulde
+                  ansvar for både front- og backend-udviklingen. Denne erfaring
+                  gav mig en dyb forståelse af hele udviklingsprocessen, fra ide
+                  til implementering, samt værdifuld indsigt i, hvordan man
+                  sikrer en app er både funktionel og tiltalende for brugeren.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
 
-        <section class="lessons-learned" id="learned">
-            <article>
-                <div class="learned-header-container">
-                    <h2 class="description-header">Læring</h2>
-                    <div class="content-container">
-                        <div class="information">
-                            <p>Da jeg var alene om projektet, var det en enorm lærerig proces osv osv</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                            <p>Mere bla bla bla om  læringsprocessen</p>
-                        </div>
-                    </div>
+      <section class="project-showcase" id="walkthrough">
+        <article>
+          <div class="showcase-header-container">
+            <h2 class="description-header">Showcase</h2>
+            <div class="showcase-container">
+              <div class="showcase-project-card">
+                <h3 class="showcase-card-title">Sign-up and Log-in</h3>
+                <div class="showcase-description-container">
+                  <img
+                    class="showcase-img"
+                    src="../images/myVinyls/register.JPG"
+                    alt="Project 1 image"
+                  />
+                  <div class="showcase-subtext">
+                    <p>
+                      Her har vi signup siden, hvor brugeren kan registrere sig.
+                      Under registreringsprocessen vil brugeren blive bedt om at
+                      indtaste forskellige personlige oplysninger, som derefter
+                      valideres. Dette inkluderer kontrollen af e-mailadresser
+                      for korrekt format, styrken af det valgte password, og at
+                      alle obligatoriske felter er udfyldt. Denne side er
+                      designet med brugerens sikkerhed for øje, sikrer en
+                      glidende brugeroplevelse og minimerer risikoen for fejl
+                      under registreringen.
+                    </p>
+                    <br />
+                    <p>
+                      Efter succesfuld registrering bliver brugeren ført til
+                      login siden, hvor man så kan logge ind med de oplysninger
+                      man er registreret med. Her er der ligeledes implementeret
+                      validering, så brugeren promptes, hvis det er de forkerte
+                      oplysninger der tastes ind.
+                    </p>
+                    <br />
+                    <p>
+                      Til sidst er der på hjemmesiden implementeret en
+                      sprogskifter-funktion i bunden af skærmen. Dette giver
+                      brugerne mulighed for at skifte mellem engelsk og dansk,
+                      hvilket gør sitet tilgængeligt for et bredere publikum og
+                      forbedrer brugeroplevelsen for ikke-engelsktalende
+                      brugere. Denne funktion understreger hjemmesidens
+                      inklusivitet og tilgængelighed.
+                    </p>
+                  </div>
                 </div>
-            </article>
-        </section>
+              </div>
+
+              <div class="showcase-project-card">
+                <h3 class="showcase-card-title">Forside</h3>
+                <div class="showcase-description-container">
+                  <img
+                    class="showcase-img"
+                    src="../images/myVinyls/landingpage.JPG"
+                    alt="Landingpage"
+                  />
+                  <div class="showcase-subtext">
+                    <p>
+                      Når brugeren har gennemført log-ind processen på
+                      hjemmesiden, bliver de omdirigeret til hjemmesidens
+                      hovedside. På denne side bliver de mødt med en personlig
+                      velkomst, hvor brugerens navn, som blev angivet under
+                      registreringsprocessen, fremgår tydeligt i
+                      navigationbaren. Dette bidrager til at skabe en mere
+                      engagerende og personlig brugeroplevelse.
+                    </p>
+                    <br />
+                    <p>
+                      Navigationbaren tjener som brugerens kompas på
+                      hjemmesiden, hvor de har adgang til flere nøglefunktioner
+                      for at udforske og interagere med sitet.
+                    </p>
+                    <br />
+                    <p>
+                      Albums: Brugere kan administrere deres vinylsamling her,
+                      inklusiv at tilføje, redigere, og slette plader med
+                      detaljer som kunstner, titel, år, og genre.
+                    </p>
+                    <br />
+                    <p>
+                      Posts: Her kan brugerne dele beskeder, musikanbefalinger,
+                      og oplevelser på en opslagstavle.
+                    </p>
+                    <br />
+                    <p>
+                      Logout: For at sikre brugernes privatliv og sikkerhed er
+                      der en lettilgængelig logout-knap. Når brugeren ønsker at
+                      afslutte deres session, sikrer denne funktion, at brugeren
+                      bliver korrekt logget ud, og at deres session afsluttes.
+                      Dette er en vigtig sikkerhedsforanstaltning, især når man
+                      bruger offentlige eller delte computere.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase-project-card">
+                <h3 class="showcase-card-title">Vinyl samling</h3>
+                <div class="showcase-description-container">
+                  <img
+                    class="showcase-img"
+                    src="../images/myVinyls/oversigt.JPG"
+                    alt="Landingpage"
+                  />
+                  <div class="showcase-subtext">
+                    <br />
+                    <p>
+                      I fanen "Vinyler" tilbydes en detaljeret oversigt over
+                      brugerens pladesamling. Fra denne sektion kan brugerne
+                      tilføje nye albums ved at anvende "Tilføj Album"-knappen,
+                      hvor det er muligt at indtaste detaljer såsom kunstner,
+                      albumtitel, udgivelsesår, og genre, samt uploade
+                      albumcovers.
+                    </p>
+                    <br />
+                    <p>
+                      Derudover giver "mere"-knappen adgang til at redigere
+                      eller slette eksisterende plader, hvilket er nyttigt, hvis
+                      en plade er blevet solgt eller givet væk.
+                    </p>
+                    <br />
+                    <p>
+                      En "livesearch"-funktion i søgefeltet gør det desuden nemt
+                      at søge specifikt i samlingen, hvilket forbedrer
+                      brugervenligheden og tilgængeligheden af information.
+                    </p>
+
+                    <br />
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase-project-card">
+                <h3 class="showcase-card-title">Message Board</h3>
+                <div class="showcase-description-container">
+                  <img
+                    class="showcase-img"
+                    src="../images/myVinyls/posts.JPG"
+                    alt="Posts page"
+                  />
+                  <div class="showcase-subtext">
+                    <br />
+                    <p>
+                      Posts: I dette afsnit kan brugerne interagere med et
+                      fællesskab af ligesindede ved at skrive og dele beskeder
+                      på en opslagstavle. Dette kan være alt fra anbefalinger af
+                      musik, sælge plader ,personlige oplevelser med bestemte
+                      albums eller generelle diskussioner relateret til musik.
+                      Det giver en platform for brugerne til at udveksle tanker
+                      og ideer, hvilket bidrager til et stærkere og mere
+                      engageret fællesskab på sitet.
+                    </p>
+                    <br />
+                    <p>
+                      Interaktionen på platformen fremmer ikke bare deling og
+                      læring mellem brugere, men tilbyder også en solid kilde
+                      til ny information og inspiration. Ved at dele personlige
+                      musikoplevelser eller læse hvad andre skriver, kan
+                      brugerne finde ny musik, se nye sider af musik de allerede
+                      kender, eller simpelthen nyde følelsen af fællesskab
+                      omkring deres fælles interesse. Platformen tilbyder et
+                      inkluderende og støttende rum, hvor alle, uanset erfaring,
+                      er velkomne og kan føle sig værdsatte.
+                    </p>
+                    <br />
+                  </div>
+                </div>
+                <p class="github-link">
+                  <a
+                    href="https://github.com/JakobBundgaard/htdocs/tree/master/myVinyls"
+                    target="_blank"
+                    >Link til Github repository</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="project-description" id="learned">
+        <article>
+          <div class="description-header-container">
+            <h2 class="description-header">Læring</h2>
+            <div class="content-container">
+              <div class="information">
+                <p>
+                  Da jeg var den eneste udvikler på projektet og varetog
+                  ansvaret for både front- og backend-udvikling, opnåede jeg en
+                  omfattende forståelse for hele udviklingscyklussen - fra de
+                  første idéskitser til den endelige implementering. Denne
+                  hands-on erfaring styrkede min evne til at navigere i
+                  komplekse tekniske udfordringer, samtidig med at jeg fik et
+                  indgående kendskab til, hvordan man designer og udvikler
+                  applikationer, der ikke bare er funktionelle, men også
+                  brugervenlige og visuelt tiltalende. Dette projekt har været
+                  en god læringsproces, som har givet mig praktisk erfaring i at
+                  balancere tekniske krav med brugerbehov, sikre appens ydeevne
+                  og æstetik, og ikke mindst, hvordan man selvstændigt fører et
+                  projekt fra ide til virkelighed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer class="section-contact" id="contact">
+        <h2 class="contact-header">Kontakt</h2>
+        <p class="email">jakobbundgaard@hotmail.com</p>
+        <p class="phone">+45 60 929 329</p>
+        <a
+          href="https://www.linkedin.com/in/jakob-bundgaard-b867b51a2/"
+          target="_blank"
+          ><img src="../images/linkedIn.png" alt="LinkeIn logo"
+        /></a>
+      </footer>
     </main>
-</body>
+  </body>
+</html>

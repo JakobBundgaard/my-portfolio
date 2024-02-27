@@ -333,7 +333,7 @@ h2 {
 }
 
 .myVinyls {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 300;
   color: var(--color-highlight); /* Example primary color */
 }
@@ -400,20 +400,20 @@ h2 {
   transition: var(--transition-delay);
 }
 
-.github-link a {
-  text-decoration: none;
-  font-size: 20px;
-  padding-bottom: 10px;
-  color: var(--color-text-main);
+.github-link {
+  display: flex; /* Anvender Flexbox til containeren */
+  justify-content: center; /* Centrerer indholdet (ikonet) horisontalt */
+}
+
+.github-link a img {
+  margin-top: 2rem;
+  width: 50px;
 }
 
 /* Lessons Learned */
 
 .lessons-learned {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 50px;
-  min-height: 100vh;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

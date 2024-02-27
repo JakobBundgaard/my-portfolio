@@ -245,6 +245,7 @@ h2 {
 .project-img {
   margin-top: 25px;
   width: 350px;
+  max-height: 190px;
 }
 
 .project-container hr {
@@ -404,6 +405,15 @@ h2 {
   transition: var(--transition-delay);
 }
 
+.showcase-img-3 {
+  margin-top: 2rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  transition: var(--transition-delay);
+}
+
 .showcase-img:hover {
   transform: scale(2) translateX(28%);
   transition: var(--transition-delay);
@@ -411,6 +421,12 @@ h2 {
 
 .showcase-img-2:hover {
   transform: scale(2) translateX(-28%);
+  transition: var(--transition-delay);
+}
+
+.showcase-img-3:hover {
+  transform: scale(2) translateX(-28%);
+  max-height: 500px;
   transition: var(--transition-delay);
 }
 

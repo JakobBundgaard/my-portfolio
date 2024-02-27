@@ -8,7 +8,7 @@
     <title>Sailmore projektbeskrivelse</title>
     <link
       rel="shortcut icon"
-      href="images/favicon-16x16.png"
+      href="../images/favicon-16x16.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../css/style.css" />
@@ -45,17 +45,45 @@
       <section class="project-description" id="description">
         <article>
           <div class="description-header-container">
-            <h2 class="description-header">Projekt Beskrivelse</h2>
+            <h2 class="description-header">Beskrivelse</h2>
             <div class="content-container">
               <div class="information">
                 <p>
-                  <b class="myVinyls">Sailmore</b> er et eksamensprojekt fra PBA
-                  i Webudvikling, hvor vi skulle bygge en apptil at skabe
-                  forbindelse mellem lystsejlere og gaster.
+                  <b class="myVinyls">Sailmore</b> er et afsluttende
+                  semesterprojekt på webudvikling, designet til at fremme
+                  forbindelsen mellem skippere og gaster til tursejlads.
+                  Projektet blev udviklet af et team på fire udviklere, hvor vi
+                  alle bidrog til designfasen og havde hver vores specifikke
+                  ansvarsområder. Min primære rolle var at stå for
+                  implementeringen af funktionalitet for gaster. Både front-end
+                  delen og CRUD-funktionaliteter. Dette involverede at give
+                  brugerne mulighed for til at tilmelde sig, logge ind, redigere
+                  deres profiler og slette dem, hvis nødvendigt.
                 </p>
                 <p>
-                  Frontenden er bygget i React og backenden er bygget i PHP med
-                  en mySQL database.
+                  Frontenden er udviklet med React.js og CSS for at skabe et
+                  brugervenlig interface, mens backenden er bygget i PHP og
+                  understøttet af en MySQL-database for sikker datahåndtering og
+                  lagring. Brugen af React.js tillod os at bygge en dynamisk og
+                  interaktiv webapplikation, der udnyttede komponentbaseret
+                  udvikling for at sikre en god brugeroplevelse.
+                </p>
+
+                <p>
+                  SailMore blev udviklet som en mobil app med fokus på
+                  brugervenlighed og mobilitet. Denne mobil-first tilgang
+                  betyder, at brugerne kan nyde en sømløs oplevelse på deres
+                  smartphones, hvilket gør det lettere end nogensinde at
+                  engagere sig i sejlsportsfællesskabet uanset tid og sted.
+                </p>
+
+                <p class="github-link">
+                  NB - husk korrekt url
+                  <a
+                    href="https://github.com/JakobBundgaard/htdocs/tree/master/myVinyls"
+                    target="_blank"
+                    ><img src="../images/github-sign.png" alt="Github logo"
+                  /></a>
                 </p>
               </div>
             </div>
@@ -67,255 +95,146 @@
         <article>
           <div class="showcase-header-container">
             <h2 class="description-header">Showcase</h2>
+
+            <div class="showcase-project-card">
+              <h3 class="showcase-card-title">Forside</h3>
+              <div class="showcase-description-container">
+                <div class="showcase-subtext">
+                  <p>
+                    På forsiden er der mulighed for at browse og søge på ture,
+                    der er lagt op. Man kan klikke ind på hver enkelt tur og se
+                    detaljer om den pågældende tur, hvilken skipper der har lagt
+                    turen op og detaljer om skipperens båd. Der er også mulighed
+                    for at melde sig til en tur, men klikker på man på
+                    "apply"-knappen bliver man bedt om at logge ind eller
+                    oprette sig som bruger, hvis ikke man er det.
+                  </p>
+                  <br />
+                  <p>
+                    Nederst på siden har vi navigationsbaren hvor brugeren kan
+                    navigere rundt på app'en, og få adgang til flere
+                    nøglefunktioner for at udforske og interagere med sitet.
+                  </p>
+                  <br />
+                </div>
+                <img
+                  class="showcase-img-2"
+                  src="../images/sailmore/forside.JPG"
+                  alt="Landingpage"
+                />
+              </div>
+            </div>
+
             <div class="showcase-container">
               <div class="showcase-project-card">
-                <h3 class="showcase-card-title">1. Iteration</h3>
+                <h3 class="showcase-card-title">Sign-up and Log-in</h3>
                 <div class="showcase-description-container">
                   <img
                     class="showcase-img"
-                    src="../images/project-1.jpg"
+                    src="../images/sailmore/signup.JPG"
                     alt="Project 1 image"
                   />
                   <div class="showcase-subtext">
-                    <p>Kommer snart</p>
-                  </div>
-                  <!-- <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
-                                <div class="showcase-subtext">
-                                    <p>Vis log-in image og beskriv funktionalitet</p>
-                                </div> -->
-                </div>
-              </div>
-              <div class="showcase-project-card">
-                <h3 class="showcase-card-title">2. Iteration</h3>
-                <div class="showcase-description-container">
-                  <img
-                    class="showcase-img"
-                    src="../images/project-1.jpg"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
-                    <p>Kommer snart</p>
-                  </div>
-                  <!-- <img class="showcase-img" src="../images/project-1.jpg" alt="Project 1 image">
-                                <div class="showcase-subtext">
-                                    <p>Vis log-in image og beskriv funktionalitet</p>
-                                </div> -->
-                </div>
-              </div>
-              <div class="showcase-project-card">
-                <h3 class="showcase-card-title">3. Iteration</h3>
-                <div class="showcase-description-container">
-                  <img
-                    class="showcase-img"
-                    src="../images/GitGraph_start.PNG"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
+                    <br />
                     <p>
-                      Vores tilgang til projektet var. pga projektets omfang,
+                      På signup-siden har brugeren mulighed for at oprette en
+                      konto ved at gennemgå en registreringsproces. I løbet af
+                      processen bliver brugeren opfordret til at udfylde en
+                      række felter med personlige data, herunder navn, email, et
+                      ønsket password samt en gentagelse af passwordet for
+                      bekræftelse, sammen med andre relevante oplysninger. Dette
+                      trin er afgørende for at sikre en personlig og sikker
+                      brugeroplevelse på platformen.
                     </p>
-                    <p>at arbejde sammen istedet for hver for sig. For at få</p>
-                    <p>en bedre grundforståelse for at sætte en database op,</p>
-                    <p>normalisering af tabeller, få lavet en connection og</p>
-                    <p>kunne gemme og hente data fra dem.</p>
-                  </div>
-                  <img
-                    class="showcase-img"
-                    src="../images/ER_final.PNG"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
-                    <p>ER-diagram</p>
-                    <p>Her er sidste version af vores ER-diagram.</p>
-                    <p>Hvor man kan se at vi har 3 tabeller.</p>
+                    <br />
                     <p>
-                      Vi har en users tabel med "en til mange" relation til
-                      chat_history tabellen.
+                      Efter succesfuld registrering bliver brugeren ført til
+                      login siden, hvor man så kan logge ind med de oplysninger
+                      man er registreret med. Her er der implementeret
+                      validering, så brugeren promptes, hvis det er de forkerte
+                      oplysninger der tastes ind.
                     </p>
-                    <p>
-                      Vores chat_history tabel med "en til mange" relation til
-                      vores responses tabel.
-                    </p>
+                    <br />
                   </div>
                 </div>
               </div>
+
               <div class="showcase-project-card">
-                <h3 class="showcase-card-title">3. Iteration</h3>
+                <h3 class="showcase-card-title">Profil side</h3>
                 <div class="showcase-description-container">
-                  <img
-                    class="showcase-img"
-                    src="../images/tables_final.PNG"
-                    alt="Project 1 image"
-                  />
                   <div class="showcase-subtext">
-                    <p>Her er vores SQL queries til at lave tabellerne.</p>
+                    <br />
                     <p>
-                      I responses tabellen har vi et autoincrementet
-                      responses_id, som er primary key og to
+                      Efter en bruger har logget ind, bliver vedkommende
+                      omdirigeret til sin profilsiden. På denne side præsenteres
+                      brugeren for sine egne oplysninger. Der findes en
+                      redigeringsknap, som giver mulighed for at foretage
+                      ændringer i brugerens oplysninger eller, hvis ønsket,
+                      slette profilen helt. Dette tillader brugere at have fuld
+                      kontrol over deres personlige information og sikrer en
+                      tilpasset brugeroplevelse på platformen.
                     </p>
-                    <p>varchar attributter til spørgsmål og svar.</p>
+                    <br />
                     <p>
-                      I chat_history tabellen har vi en primary key history_id,
-                      to varchar attributter
+                      Yderligere, som en del af de tilgængelige funktioner for
+                      indloggede brugere, tilbydes der muligheden for at
+                      tilmelde sig forskellige ture.
                     </p>
-                    <p>
-                      user_messages og response, til brugerens input og
-                      chatbottens svar.
-                    </p>
-                    <p>
-                      Så har vi chat_id, som er foreign key, en reference til
-                      responses tabellen.
-                    </p>
-                    <p>
-                      Users tabellen er til så, der på sigt, kan oprettes flere
-                      brugere som kan
-                    </p>
-                    <p>se deres egen chat historik</p>
+                    <br />
+                    <br />
                   </div>
                   <img
-                    class="showcase-img"
-                    src="../images/db_connection.PNG"
-                    alt="Project 1 image"
+                    class="showcase-img-2"
+                    src="../images/sailmore/profil.JPG"
+                    alt="Profilpage"
                   />
-                  <div class="showcase-subtext">
-                    <p>Her forbinder vi til databasen med mysqli_connect.</p>
-                    <p>
-                      først includer vi sql.php, hvor database informationen
-                      ligger.
-                    </p>
-                    <p>
-                      De ligge i en seperat fil, som er gitignored, så login
-                      info
-                    </p>
-                    <p>ikke bliver commited til Github</p>
-                  </div>
-                </div>
-              </div>
-              <div class="showcase-project-card">
-                <h3 class="showcase-card-title">3. Iteration</h3>
-                <div class="showcase-description-container">
-                  <img
-                    class="showcase-img"
-                    src="../images/message1.PNG"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
-                    <p>
-                      Her bruges JS fetch api til at sende json data til
-                      endpointed "backend/backend.php"
-                    </p>
-                    <p>Det gøres med et POST request.</p>
-                  </div>
-                  <img
-                    class="showcase-img"
-                    src="../images/find_response_query.PNG"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
-                    <p>
-                      Her vises sql-queryen i backend/backend.php der finder det
-                      korrekte svar.
-                    </p>
-                    <p>
-                      Der bruges prepared statements for at beskytte mod f.eks.
-                      sql-injections
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="showcase-project-card">
-                <h3 class="showcase-card-title">3. Iteration</h3>
-                <div class="showcase-description-container">
-                  <img
-                    class="showcase-img"
-                    src="../images/display_chat_hist.PNG"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
-                    <p>
-                      Her loopes over indholdet af chat_history og addMessage
-                      kaldes på hvert element
-                    </p>
-                    <p>Så det tilføjes chatcontaineren</p>
-                  </div>
-                  <img
-                    class="showcase-img"
-                    src="../images/chat_history_backend.PNG"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
-                    <p>
-                      Her vises sql-queryen, der indsætter spørgsmål og svar i
-                      chat_history tabellen
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="showcase-project-card">
-                <h3 class="showcase-card-title">3. Iteration</h3>
-                <div class="showcase-description-container">
-                  <img
-                    class="showcase-img"
-                    src="../images/get_chatHistory.PNG"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
-                    <p>Her vises sql-queryen der henter chathistorikken.</p>
-                    <p>
-                      Der loopes over indholdet, med et while loop, som vi
-                      json_encoder og echoer ud.
-                    </p>
-                  </div>
-                  <img
-                    class="showcase-img"
-                    src="../images/fetch_chatHistory_onload.PNG"
-                    alt="Project 1 image"
-                  />
-                  <div class="showcase-subtext">
-                    <p>
-                      Her vises en fetch på endpointed
-                      "backend/getAllMessages.php",
-                    </p>
-                    <p>
-                      der viser chat-historikken når chatbotten åbnes eller
-                      siden refreshes
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="github-link">
-            <a
-              href="https://github.com/eaaa-dob-wu-e23a/portfolio-JakobBundgaard"
-              target="_blank"
-              >Github</a
-            >
-          </p>
         </article>
       </section>
 
-      <section class="lessons-learned" id="learned">
+      <section class="project-description" id="learned">
         <article>
-          <div class="learned-header-container">
-            <h2 class="description-header">Læring</h2>
+          <div class="description-header-container">
+            <h2 class="lessons-learned">Læring</h2>
             <div class="content-container">
               <div class="information">
-                <p>Projektet har givet mig en bedre forståelse af</p>
                 <p>
-                  hvordan JS fetch api bruges til at sende og hente data fra en
+                  Sailmore var mit første størrere projekt med React og
+                  komponentbaseret udvikling. Jeg lærte meget om, hvordan man
+                  opbygger responsive og brugervenlige webapplikationer og
+                  arbejdet med SQL-databasen i sammenhæng med React gav mig
+                  praktisk erfaring med databasemanipulation og datahåndtering
+                  på klient-siden. Denne erfaring har givet mig en bedre
+                  forståelse af, hvordan man effektivt kan integrere front-end
+                  og back-end teknologier for at skabe en funktionel og
+                  tiltalende applikation.
                 </p>
-                <p>sql database ved hjælp af quereies.</p>
+                <br />
                 <p>
-                  Derudover har jeg lært meget af at bruge Github kollaborativt.
+                  Gennem arbejdet med Sailmore lærte jeg ikke kun om tekniske
+                  færdigheder, men også om vigtigheden af teamwork og
+                  kommunikation inden for et udviklerhold. At arbejde sammen om
+                  at designe appen og derefter fordele ansvarsområderne, mens vi
+                  stadig støttede hinanden gennem udviklingsprocessen, var en
+                  lærerig oplevelse.
                 </p>
-                <p>Specifikt merging og fetching.</p>
-                <p>Alt i alt har det været en lærerig process.</p>
               </div>
             </div>
           </div>
         </article>
       </section>
+      <footer class="section-contact" id="contact">
+        <h2 class="contact-header">Kontakt</h2>
+        <p class="email">jakobbundgaard@hotmail.com</p>
+        <a
+          href="https://www.linkedin.com/in/jakob-bundgaard-b867b51a2/"
+          target="_blank"
+          ><img src="../images/linkedIn.png" alt="LinkeIn logo"
+        /></a>
+      </footer>
     </main>
   </body>
 </html>

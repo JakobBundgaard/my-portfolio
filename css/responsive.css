@@ -81,7 +81,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   color: var(--color-text-header);
 }
 
@@ -96,6 +96,13 @@ nav ul {
 nav li {
   text-decoration: none;
   margin-bottom: 15px;
+  transition: transform var(--transition-delay);
+}
+
+nav li:hover {
+  transform: scale(1.1);
+  transition: transform var(--transition-delay);
+  /* color: var(--color-text-header); */
 }
 
 .logo {

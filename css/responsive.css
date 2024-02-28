@@ -228,7 +228,7 @@ section {
   width: 400px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: var(--transition-delay);
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   border-radius: 5px;
 }
 
@@ -338,18 +338,36 @@ h2 {
   border: 1px solid transparent;
 } */
 
-.project-card {
+/* .project-card {
   height: auto;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px; /* Reduced margin */
+  margin: 20px; 
   transition: var(--transition-delay);
   border-radius: 5px;
   background-color: #f5f5f5;
   border: 1px solid transparent;
-  flex: 1; /* Allow flex */
+  flex: 1; 
+  max-width: calc(
+    33.333% - 40px
+  );
+} */
+
+.project-card {
+  display: flex;
+  flex-direction: column; /* Organize the content in a column */
+  justify-content: space-between; /* Distribute space between items */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px; /* Keep your reduced margin */
+  transition: var(--transition-delay);
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+  flex: 1; /* Allow flex items to grow */
   max-width: calc(
     33.333% - 40px
   ); /* Adjust max-width for three cards in a row, accounting for margin */
+  /* Set a min-height to ensure a consistent height regardless of content, adjust as needed */
+  min-height: 400px;
 }
 
 .project-card:hover {
@@ -371,10 +389,18 @@ h2 {
   max-height: 190px;
 } */
 
+/* .project-img {
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
 .project-img {
   margin-top: 25px;
   width: 100%; /* This will make the image responsive */
-  height: auto; /* This will maintain the aspect ratio of the image */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* This will cover the area without distortion */
   display: block; /* This will remove any extra space below the image that inline elements have */
 }
 
@@ -391,11 +417,20 @@ h2 {
   font-weight: 400;
 }
 
-.subtext {
-  /* font-size: 20px; */
+/* .subtext {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
   font-weight: 400;
   margin-top: 25px;
+} */
+
+.subtext {
+  font-size: clamp(0.8rem, 1.5vw, 1rem); /* Responsive font size */
+  font-weight: 400;
+  margin-top: 25px;
+  min-height: 4em; /* Set a minimum height */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
 }
 
 .projects {

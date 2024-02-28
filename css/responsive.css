@@ -49,12 +49,35 @@ header {
   z-index: 100;
 }
 
+.hamburger {
+  display: none; /* Hide by default */
+  font-size: 30px; /* Size of the hamburger icon */
+  background: none;
+  border: none;
+  color: var(--color-text-header); /* Color of the hamburger icon */
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 200;
 }
+
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 200;
+} */
+
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  font-weight: 200;
+} */
 
 nav a {
   text-decoration: none;
@@ -88,6 +111,41 @@ i {
   justify-content: center;
   color: var(--color-text-header);
   padding-bottom: 5px;
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the nav links on small screens */
+    flex-direction: column; /* Stack them vertically */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the links */
+    position: absolute; /* Position them absolutely relative to nav */
+    top: 68px; /* Height of the header */
+    left: 0;
+    background: var(
+      --color-bg-header
+    ); /* Match the background with the header */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Add some vertical margin for touch targets */
+  }
+
+  .nav-links li a {
+    display: block; /* Make the links take up the full width */
+    padding: 10px 20px; /* Add padding for touch targets */
+  }
+
+  .hamburger {
+    display: flex; /* Show the hamburger icon on small screens */
+    margin-left: 10rem;
+  }
+
+  /* Additional styles to handle the menu when it's open */
+  .nav-links.show {
+    display: flex; /* Show the nav links when 'show' class is added */
+  }
 }
 
 section {

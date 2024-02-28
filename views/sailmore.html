@@ -11,7 +11,7 @@
       href="../images/favicon-16x16.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +33,15 @@
             src="../images/logo-192x192.png"
             alt="Logo for Jakob Bundgaard"
         /></a>
-        <ul>
+        <button
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          &#9776;
+          <!-- This is a common character used to represent a hamburger menu -->
+        </button>
+        <ul class="nav-links">
           <li><a href="#description">Beskrivelse</a></li>
           <li><a href="#walkthrough">Showcase</a></li>
           <li><a href="#learned">Læring</a></li>

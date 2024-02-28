@@ -50,11 +50,11 @@ header {
 }
 
 .hamburger {
-  display: none; /* Hide by default */
-  font-size: 30px; /* Size of the hamburger icon */
+  display: none;
+  font-size: 30px;
   background: none;
   border: none;
-  color: var(--color-text-header); /* Color of the hamburger icon */
+  color: var(--color-text-header);
   cursor: pointer;
 }
 
@@ -64,20 +64,6 @@ nav {
   justify-content: center;
   font-weight: 200;
 }
-
-/* nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: 200;
-} */
-
-/* nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  font-weight: 200;
-} */
 
 nav a {
   text-decoration: none;
@@ -123,35 +109,32 @@ i {
 /* Styles for small screens */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Hide the nav links on small screens */
-    flex-direction: column; /* Stack them vertically */
-    width: 100%; /* Full width */
-    text-align: center; /* Center the links */
-    position: absolute; /* Position them absolutely relative to nav */
-    top: 68px; /* Height of the header */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 68px;
     left: 0;
-    background: var(
-      --color-bg-header
-    ); /* Match the background with the header */
+    background: var(--color-bg-header);
   }
 
   .nav-links li {
-    margin: 10px 0; /* Add some vertical margin for touch targets */
+    margin: 10px 0;
   }
 
   .nav-links li a {
-    display: block; /* Make the links take up the full width */
-    padding: 10px 20px; /* Add padding for touch targets */
+    display: block;
+    padding: 10px 20px;
   }
 
   .hamburger {
-    display: flex; /* Show the hamburger icon on small screens */
+    display: flex;
     margin-left: 10rem;
   }
 
-  /* Additional styles to handle the menu when it's open */
   .nav-links.show {
-    display: flex; /* Show the nav links when 'show' class is added */
+    display: flex;
   }
 }
 
@@ -166,15 +149,15 @@ section {
 @media (max-width: 768px) {
   .section-about,
   .section-projects {
-    padding: 30px 0; /* Less padding on smaller screens */
-    margin: 30px 0; /* Less margin on smaller screens */
+    padding: 30px 0;
+    margin: 30px 0;
   }
 }
 
 .section-about,
 .section-projects {
-  padding: 50px 0; /* Add top and bottom padding */
-  margin: 50px 0; /* Add top and bottom margin */
+  padding: 50px 0;
+  margin: 50px 0;
 }
 
 .hero-article {
@@ -222,28 +205,28 @@ section {
 
 @media (max-width: 1200px) {
   .hero-header {
-    font-size: 70px; /* Adjust for medium-large screens */
+    font-size: 70px;
   }
   .hero-subtext {
-    font-size: 32px; /* Adjust subtitle font size */
+    font-size: 32px;
   }
 }
 
 @media (max-width: 960px) {
   .hero-header {
-    font-size: 60px; /* Adjust for medium screens */
+    font-size: 60px;
   }
   .hero-subtext {
-    font-size: 30px; /* Adjust for medium screens */
+    font-size: 30px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-header {
-    font-size: 48px; /* Smaller font size */
+    font-size: 48px;
   }
   .hero-subtext {
-    font-size: 24px; /* Smaller font size */
+    font-size: 24px;
   }
 }
 
@@ -293,13 +276,12 @@ section {
   width: 400px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: var(--transition-delay);
-  /* filter: grayscale(100%); */
   border-radius: 5px;
 }
 
 @media (max-width: 480px) {
   .headshot {
-    width: 90vw; /* Adjust headshot size for smaller screens */
+    width: 90vw;
   }
 }
 
@@ -318,39 +300,37 @@ h2 {
   .project-card,
   .information,
   .headshot-container {
-    width: auto; /* Ensure these elements scale properly */
-    margin: 20px; /* Adjust margins for a bit more space */
+    width: auto;
+    margin: 20px;
   }
 }
 
 @media (max-width: 960px) {
   .content-container {
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column;
     padding: 20px;
   }
   .information {
     padding: 15px;
-    text-align: center; /* If you want to center the text, otherwise remove this line */
+    text-align: center;
   }
   .about-header,
   .info-header {
-    font-size: 35px; /* Adjust font sizes */
+    font-size: 35px;
   }
 
-  /* Only center the image container */
   .headshot-container {
     display: flex;
-    justify-content: center; /* Center the image container itself */
-    align-items: center; /* Align items vertically */
-    padding: 0; /* Reset padding if needed */
-    margin-top: 20px; /* Add some space between the text and the image */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 20px;
   }
 
-  /* Adjust the image styling */
   .headshot {
-    width: 50%; /* Adjust width as necessary */
-    height: auto; /* Maintain the aspect ratio */
-    margin-top: 0; /* Reset any specific margin-top styles if needed */
+    width: 50%;
+    height: auto;
+    margin-top: 0;
   }
 }
 
@@ -362,7 +342,7 @@ h2 {
   .information,
   .headshot-container {
     padding: 20px;
-    width: auto; /* Ensure it takes up available width */
+    width: auto;
   }
 }
 
@@ -378,9 +358,8 @@ h2 {
 .project-container {
   margin-top: 50px;
   display: flex;
-
-  flex-wrap: wrap; /* Ensure that items can wrap to the next line */
-  justify-content: space-between; /* Adjust content distribution */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-header-container {
@@ -391,48 +370,23 @@ h2 {
   font-weight: 400;
 }
 
-/* .project-card {
-  width: 400px;
-  height: auto;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  margin: 80px;
-  margin-bottom: 30px;
-  transition: var(--transition-delay);
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  border: 1px solid transparent;
-} */
-
-/* .project-card {
-  height: auto;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px; 
-  transition: var(--transition-delay);
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  border: 1px solid transparent;
-  flex: 1; 
-  max-width: calc(
-    33.333% - 40px
-  );
-} */
-
 .project-card {
   display: flex;
-  flex-direction: column; /* Organize the content in a column */
-  justify-content: space-between; /* Distribute space between items */
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px; /* Keep your reduced margin */
+  margin: 20px;
   transition: var(--transition-delay);
   border-radius: 5px;
   background-color: #f5f5f5;
   border: 1px solid transparent;
-  flex: 1; /* Allow flex items to grow */
-  max-width: calc(
-    33.333% - 40px
-  ); /* Adjust max-width for three cards in a row, accounting for margin */
-  /* Set a min-height to ensure a consistent height regardless of content, adjust as needed */
+  flex: 1;
+  max-width: calc(33.333% - 40px);
   min-height: 400px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
 }
 
 .project-card:hover {
@@ -448,25 +402,12 @@ h2 {
   color: var(--color-text-main);
 }
 
-/* .project-img {
-  margin-top: 25px;
-  width: 350px;
-  max-height: 190px;
-} */
-
-/* .project-img {
-  margin-top: 25px;
-  width: 100%;
-  height: auto;
-  display: block;
-} */
-
 .project-img {
   margin-top: 25px;
-  width: 100%; /* This will make the image responsive */
-  height: 200px; /* Set a fixed height for all images */
-  object-fit: cover; /* This will cover the area without distortion */
-  display: block; /* This will remove any extra space below the image that inline elements have */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
 .project-container hr {
@@ -477,25 +418,18 @@ h2 {
 
 .project-title {
   margin-top: 30px;
-  /* font-size: 40px; */
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 400;
 }
 
-/* .subtext {
+.subtext {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
   font-weight: 400;
   margin-top: 25px;
-} */
-
-.subtext {
-  font-size: clamp(0.8rem, 1.5vw, 1rem); /* Responsive font size */
-  font-weight: 400;
-  margin-top: 25px;
-  min-height: 4em; /* Set a minimum height */
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center content vertically */
+  min-height: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects {
@@ -503,107 +437,97 @@ h2 {
 }
 
 .description-link {
-  /* font-size: 20px; */
-  /* font-size: clamp(1rem, 2.5vw, 1.5rem); */
   font-size: clamp(0.8rem, 1.5vw, 1rem);
   cursor: pointer;
 }
 
-/* Media query for screens larger than 1697px */
 @media (min-width: 1697px) {
   .project-container {
-    justify-content: center; /* Centers the cards without stretching them too much */
+    justify-content: center;
   }
   .project-card {
-    flex: 0 1 calc(33.333% - 40px); /* Do not grow, can shrink, and set the base width */
+    flex: 0 1 calc(33.333% - 40px);
   }
 }
 
-/* Media query for screens between 1137px and 1697px */
 @media (min-width: 1137px) and (max-width: 1697px) {
   .project-container {
-    justify-content: space-around; /* This will give some space around items if they can't fit three in a row */
+    justify-content: space-around;
   }
   .project-card {
-    flex: 0 1 calc(50% - 40px); /* Adjust the flex-basis to allow for two cards per row */
+    flex: 0 1 calc(50% - 40px);
   }
 }
 
 @media (max-width: 1139px) {
   .project-card {
-    width: calc(50% - 40px); /* Adjust width for two cards per row */
-    margin: 20px; /* Reduce margin */
+    width: calc(50% - 40px);
+    margin: 20px;
   }
 
   .project-img {
-    height: 200px; /* Set a fixed height if necessary to prevent layout shift */
+    height: 200px;
   }
 
   .project-title,
   .project-description {
-    font-size: 0.9rem; /* Reduce font size */
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 1137px) {
   .project-container {
-    justify-content: center; /* Center the cards in the container */
+    justify-content: center;
   }
 
   .project-card {
-    width: 90%; /* Set a width that is relative to the viewport */
-    max-width: none; /* Remove any max-width restrictions */
-    margin: 20px auto; /* Top and bottom margins with auto horizontal margins to center the cards */
-    flex: none; /* Disable flex grow/shrink to maintain the width */
+    width: 90%;
+    max-width: none;
+    margin: 20px auto;
+    flex: none;
   }
 
   .project-img {
-    height: auto; /* Allow the height to be auto to maintain aspect ratio */
-    margin-top: 15px; /* Adjust margin-top if needed */
+    height: auto;
+    margin-top: 15px;
   }
 
-  /* Adjust the font sizes if they are still too large */
   .project-title,
   .project-description,
   .description-link {
-    font-size: clamp(
-      0.8rem,
-      4vw,
-      1rem
-    ); /* This will scale the font size based on the viewport width */
+    font-size: clamp(0.8rem, 4vw, 1rem);
   }
 }
 
 @media (max-width: 768px) {
   .project-card {
-    width: 100%; /* Full width for a single column layout */
-    margin: 10px 0; /* Adjust margin for stacked layout */
+    width: 100%;
+    margin: 10px 0;
   }
 
-  /* Adjust image sizes and text to fit the single column layout */
   .project-img {
-    height: 150px; /* Adjust to fit */
+    height: 150px;
   }
 
   .project-title {
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.2rem;
   }
 
   .project-description {
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
   }
 }
 
-/* Media query for screens smaller than 1137px */
 @media (max-width: 1137px) {
   .project-container {
     flex-direction: column;
-    align-items: center; /* This stacks the cards on top of each other and centers them */
+    align-items: center;
   }
+
   .project-card {
-    width: 80%; /* Set a specific width for smaller screens */
-    flex: none; /* Disable flex grow/shrink */
-    margin: 20px 0; /* Adjust margin to only vertical */
+    width: 80%;
+    flex: none;
+    margin: 20px 0;
   }
 }
 
@@ -613,8 +537,8 @@ h2 {
     justify-content: center;
   }
   .project-card {
-    width: 45%; /* Adjust width for a 2-column layout */
-    margin: 20px; /* Adjust spacing */
+    width: 45%;
+    margin: 20px;
   }
 }
 
@@ -623,12 +547,14 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+
   .project-card {
-    width: 90%; /* Use percentage for responsiveness */
-    margin: 20px; /* Reduce margin */
+    width: 90%;
+    margin: 20px;
   }
+
   .project-img {
-    width: 80%; /* Adjust image width */
+    width: 80%;
   }
 }
 
@@ -643,18 +569,21 @@ h2 {
 
 .contact-header {
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 3rem;
+}
+.email {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 960px) {
   .section-contact {
-    padding: 40px 20px; /* Adjust padding for better spacing */
+    padding: 40px 20px;
   }
 }
 
 @media (max-width: 768px) {
   .section-contact {
-    padding: 40px 20px; /* Adjust padding */
+    padding: 40px 20px;
   }
 }
 
@@ -700,7 +629,6 @@ h2 {
   line-height: 1.6;
   margin-bottom: 1rem;
   color: var(--color-text-main);
-  /* color: #333; */
 }
 
 /* Showcase */
@@ -791,6 +719,26 @@ h2 {
 .github-link a img {
   margin-top: 2rem;
   width: 50px;
+}
+
+.github-link-2 {
+  width: 40px;
+}
+
+.linkedIn-link {
+  width: 53px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  margin: 0 10px;
+
+  height: auto;
 }
 
 /* Lessons Learned */

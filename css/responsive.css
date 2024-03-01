@@ -107,7 +107,7 @@ i {
 }
 
 /* Styles for small screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -745,8 +745,12 @@ h2 {
 
 .social-link {
   margin: 0 10px;
-
   height: auto;
+}
+
+.mail-link {
+  width: 40px;
+  margin-left: 15px;
 }
 
 /* Lessons Learned */

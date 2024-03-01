@@ -25,3 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.toggle("show");
   });
 });
+
+document.querySelectorAll(".project-card").forEach((card) => {
+  card.addEventListener("click", () => {
+    window.location.href = card.querySelector(".description-link").href;
+  });
+});

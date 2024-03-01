@@ -244,6 +244,14 @@ section {
   justify-content: center;
 }
 
+.content-container-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
 .info-header {
   font-weight: 400;
 }

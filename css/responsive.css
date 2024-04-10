@@ -805,3 +805,34 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+/* Showcase description container adjustment for mobile */
+@media (max-width: 768px) {
+  .showcase-description-container {
+    /* Switch from grid to flexbox for easier stacking */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+  }
+
+  .showcase-img,
+  .showcase-img-2,
+  .showcase-img-3 {
+    width: 90%; /* Adjust the width as desired, maybe 90% of the container */
+    margin: 0 0 1rem 0; /* Reset any left/right margins and add margin below the image */
+    height: auto; /* Keep the original aspect ratio */
+  }
+
+  .showcase-subtext {
+    width: 100%; /* Allow the text to take the full width */
+    padding: 1rem; /* Add some padding around the text */
+    text-align: center; /* Center align the text for better readability */
+  }
+}
+
+/* If you want to adjust the title size on mobile as well */
+@media (max-width: 768px) {
+  .showcase-card-title {
+    font-size: 28px; /* Adjust the font size as needed */
+  }
+}

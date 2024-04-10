@@ -248,10 +248,33 @@ section {
 
 .content-container-about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 65%;
   margin: auto;
+}
+
+@media (min-width: 966px) {
+  .content-container-about {
+    justify-content: space-evenly; /* Space out the children evenly */
+  }
+  .headshot-container {
+    flex: 0 0 35%; /* Don't grow, don't shrink, start at 35% width */
+  }
+
+  .information {
+    flex: 1; /* Take up the remaining space */
+    padding: 0 2rem; /* Add some padding on the sides */
+  }
+}
+
+.hero-header {
+  font-size: clamp(2rem, 5vw, 90px); /* Adjust values as needed */
+}
+
+.information p {
+  font-size: clamp(0.8rem, 2vw, 1rem); /* Adjust values as needed */
 }
 
 .info-header {
@@ -262,8 +285,16 @@ section {
   padding: 50px;
 }
 
-.information p {
+/* .information p {
   color: var(--color-text-main);
+} */
+
+@media (max-width: 965px) {
+  .information,
+  .headshot-container {
+    margin: 20px 0; /* Add more margin on top and bottom */
+    padding: 0 15px; /* Add some padding on the sides */
+  }
 }
 
 .info-header-container {
@@ -282,12 +313,20 @@ section {
 }
 
 .headshot {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px; /* Maximum width can be set as needed */
+  border-radius: 5px; /* Optional: adds rounded corners */
+  transition: var(--transition-delay);
+}
+
+/* .headshot {
   margin-right: 15px;
   width: 400px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: var(--transition-delay);
   border-radius: 5px;
-}
+} */
 
 @media (max-width: 480px) {
   .headshot {
